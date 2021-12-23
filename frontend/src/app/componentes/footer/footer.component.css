@@ -1,0 +1,9 @@
+/* .alert{
+  background-color: #EEE8AA;
+} */
+.footer {
+  position: fixed;
+  bottom: 0; /* para fixar o footer na parte de baixo */
+  background-color: #EEE8aa;
+  width: 100%;
+}

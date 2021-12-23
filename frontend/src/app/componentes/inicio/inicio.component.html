@@ -1,0 +1,45 @@
+<button
+  routerLink="/cadastrar"
+  type="button"
+  class="botaoCadastrar mx-4 mt-3 mb-3 rounded"
+>
+  Cadastrar Transferências
+</button>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nome Cliente</th>
+      <th scope="col">Valor</th>
+      <th scope="col">Conta Cliente</th>
+      <th scope="col">Editar</th>
+      <th scope="col">Excluir</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of ListarTransferencia">
+      <th>{{ item.id_tranferencia }}</th>
+      <td>{{ item.nomeClient }}</td>
+      <td>{{ item.valor }}</td>
+      <td>{{ item.contaCliente }}</td>
+      <td>
+        <button
+          (click)="editar(item.id_tranferencia)"
+          type="button"
+          class="botaoEditar btn btn"
+        >
+          Editar
+        </button>
+      </td>
+      <td>
+        <button
+          (click)="excluir(item.id_tranferencia)"
+          type="button"
+          class="botaoExcluir btn btn"
+        >
+          Excluir
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

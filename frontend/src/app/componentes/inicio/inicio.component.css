@@ -1,0 +1,14 @@
+.botaoCadastrar {
+  background-color: #DAA520;
+  border: 10px;
+  color: white;
+
+}
+.botaoEditar {
+  background-color: #104E8B;
+  color: white;
+}
+
+.botaoExcluir{
+  background-color: #EE9A00;
+}

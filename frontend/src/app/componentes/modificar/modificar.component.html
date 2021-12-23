@@ -1,0 +1,38 @@
+<p>Edição de transferencia</p>
+
+<div class="container">
+  <div class="col">
+    <form>
+      <div class="mb-1">
+        <label class="form-label">Nome do Cliente</label>
+        <input
+          [(ngModel)]="transferencia.nomeClient"
+          type="text"
+          class="form-control"
+          name="nomeClient"
+        />
+      </div>
+      <div class="mb-1">
+        <label class="form-label">Valor</label>
+        <input
+          [(ngModel)]="transferencia.valor"
+          type="text"
+          class="form-control"
+          name="valor"
+        />
+      </div>
+      <div class="mb-1">
+        <label class="form-label">Conta do Cliente</label>
+        <input
+          [(ngModel)]="transferencia.contaCliente"
+          type="text"
+          class="form-control"
+          name="contaCliente"
+        />
+      </div>
+      <div class="mb-5">
+        <button (click)="modificar()" class="btn btn-primary">Editar</button>
+      </div>
+    </form>
+  </div>
+</div>
